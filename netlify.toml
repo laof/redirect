@@ -1,12 +1,13 @@
 [build]
   command = "chmod +x ./build.sh && ./build.sh"
   functions = "functions"
+  publish = "public"
 
 [build.environment]
   GO_IMPORT_PATH = "github.com/laof/redirect"
   GO111MODULE = "on"
 
 [[redirects]]
-  from = "/*"
+  from = "/api/*"
   to = "/.netlify/functions/gateway/:splat"
   status = 200
