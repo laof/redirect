@@ -1,5 +1,5 @@
 ```
-[redirects]
+[[redirects]]
   from = "/*"
   to = "https://raw.githubusercontent.com/:splat"
   status = 200
