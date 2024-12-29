@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/", helloHandler)
+	http.HandleFunc("/api/feed", helloHandler)
 }
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {
